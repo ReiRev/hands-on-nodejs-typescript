@@ -1,0 +1,18 @@
+{
+    "name": "hands-on-nodejs-typescript",
+	"dockerComposeFile": ["docker-compose.yml"],
+    "service": "jupyter",
+    "postCreateCommand": "bash .devcontainer/postCreateCommand.sh",
+	"workspaceFolder": "/workspaces/hands-on-nodejs-typescript",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "fwcd.kotlin",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    }
+}
